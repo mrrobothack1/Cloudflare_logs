@@ -11,6 +11,9 @@ https://developers.cloudflare.com/logs/tutorials/bot-management-dashboard/
 In Data Studio, open the Cloudflare template and click Use Template. A Create new report dialog opens.
 
 1.Under the New Data Source dropdown, select Create New Data Source. A page opens where you can enter additional configuration details.
+
 2.Under Google Connectors, locate the BigQuery card and click Select.
+
 3.Next under MY PROJECTS, select your Project, Dataset, and Table.
+
 4.Click Connect in the upper right.
