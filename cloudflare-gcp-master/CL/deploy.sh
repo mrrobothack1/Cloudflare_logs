@@ -1,0 +1,18 @@
+#!/bin/sh
+
+SCHEMA="schema-http.json"
+BUCKET_NAME="f-cloudflare-cl-botmanagement"
+DATASET="cloudflare_data_cl_PE"
+TABLE="cloudflare_logs_cl_PE"
+REGION="us-central1"
+# You probably don't need to change this value:
+FN_NAME="cloudlfare-PE"
+
+gcloud functions deploy $FN_NAME \
+  --runtime nodejs10 \
+  --trigger-resource $BUCKET_NAME \
+  --trigger-event google.storage.object.finalize \
+  --region=$REGION \
+  --memory=1024MB \
+  --entry-point=gcsbq \
+  --set-env-vars DATASET=$DATASET,TABLE=$TABLE,SCHEMA=$SCHEMA

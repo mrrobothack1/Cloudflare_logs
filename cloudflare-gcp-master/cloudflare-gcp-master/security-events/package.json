@@ -1,0 +1,34 @@
+{
+  "name": "cloudflare-to-scc",
+  "version": "0.1.15",
+  "description": "Deliver Cloudflare logs to Google Cloud Security Command Center",
+  "author": "Frank Taylor",
+  "license": "MIT",
+  "engines": {
+    "node": "10.15.3"
+  },
+  "main": "index.js",
+  "keywords": [
+    "cloudflare",
+    "scc",
+    "cscc",
+    "security command center",
+    "google cloud",
+    "google cloud scc",
+    "google",
+    "security",
+    "security events",
+    "app"
+  ],
+  "dependencies": {
+    "@google-cloud/security-center": "^2.2.1",
+    "@google-cloud/storage": "^2.3.4",
+    "dotenv": "^8.2.0",
+    "env-yaml": "^0.1.2",
+    "moment": "^2.24.0",
+    "ndjson": "^1.5.0",
+    "ndjson-parse": "^1.0.4",
+    "node-fetch": "^2.6.0",
+    "quick-lru": "^2.0.0"
+  }
+}

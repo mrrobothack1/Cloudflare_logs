@@ -1,0 +1,11 @@
+---
+# APIs
+apis:
+  - gcloud services enable servicemanagement.googleapis.com
+  - gcloud services enable serviceusage.googleapis.com
+  - gcloud services enable cloudfunctions.googleapis.com
+  - gcloud services enable cloudresourcemanager.googleapis.com
+  - gcloud services enable logging.googleapis.com
+  - gcloud services enable pubsub.googleapis.com
+  - gcloud services enable storage-component.googleapis.com
+  - gcloud services enable securitycenter.googleapis.com
